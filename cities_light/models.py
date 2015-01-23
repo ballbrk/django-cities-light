@@ -90,9 +90,9 @@ class Base(models.Model):
         ordering = ['name']
 
     def __str__(self):
-        display_name = getattr(self, 'display_name', None)
-        if display_name:
-            return display_name
+        #display_name = getattr(self, 'display_name', None)
+        #if display_name:
+        #    return display_name
         return self.name
 
 
